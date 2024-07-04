@@ -1,0 +1,9 @@
+<app-foo [template]="ref">
+  <h2 class="header">Header</h2>
+  <p class="body">Body</p>
+  <footer class="footer">Footer</footer>
+</app-foo>
+
+<ng-template #ref let-element>
+  <p>{{element}} app template</p>
+</ng-template>
