@@ -1,0 +1,28 @@
+<ng-content select=".header"></ng-content>
+<ng-content></ng-content>
+<p>
+  foo works!
+</p>
+<ng-content select=".footer"></ng-content>
+
+<hr>
+
+<ng-template #ref let-prefix let-number="foo">
+  <p>{{prefix}} I am template {{number}}</p>
+</ng-template>
+
+<ng-container *ngTemplateOutlet="ref; context: {foo: 2024, $implicit: 'Hello,'}"></ng-container>
+
+<ng-container *ngIf="true">
+  <div *ngFor="let item of [1,2,3]">{{item}}</div>
+</ng-container>
+
+<hr>
+
+<ng-template #defaultTemp let-element>
+  <p>{{element}} default template</p>
+</ng-template>
+
+<div *ngFor="let item of [1,2,3]">
+  <ng-container *ngTemplateOutlet="template || defaultTemp; context: {$implicit: item}"></ng-container>
+</div>
