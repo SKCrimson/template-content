@@ -5,7 +5,7 @@ import { FooComponent } from '../foo/foo.component';
   selector: 'app-foo-template',
   standalone: true,
   templateUrl: './foo-template.component.html',
-  styleUrls: ['./foo-template.component.css'],
+  styleUrls: ['./foo-template.component.scss'],
   imports: [FooComponent]
 })
 export class FooTemplateComponent implements OnInit {

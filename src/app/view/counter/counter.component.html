@@ -1,3 +1,9 @@
+<button (click)="increase()">+1</button>
+<button (click)="decrease()" [disabled]="cannotDecrease">-1</button>
+<button (click)="clear()" [disabled]="cannotDecrease">=0</button>
+
+<p>Pocet = {{counter}}</p>
+@if(updatedAt){
 <p>
-  counter works!
-</p>
+  Posledni zmena: {{updatedAt | date:"HH:mm:ss dd/MM/yyyy"}}</p>
+}

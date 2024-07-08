@@ -5,7 +5,7 @@ import { Component, Input, TemplateRef } from '@angular/core';
   selector: 'app-foo',
   standalone: true,
   templateUrl: './foo.component.html',
-  styleUrls: ['./foo.component.css'],
+  styleUrls: ['./foo.component.scss'],
   imports: [NgTemplateOutlet, NgIf, NgFor]
 })
 export class FooComponent {
