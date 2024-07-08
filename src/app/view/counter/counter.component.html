@@ -1,9 +1,9 @@
 <button (click)="increase()">+1</button>
-<button (click)="decrease()" [disabled]="cannotDecrease">-1</button>
-<button (click)="clear()" [disabled]="cannotDecrease">=0</button>
+<button (click)="decrease()" [disabled]="cannotDecrease$ | async">-1</button>
+<button (click)="clear()" [disabled]="cannotDecrease$ | async">=0</button>
 
-<p>Pocet = {{counter}}</p>
-@if(updatedAt){
-<p>
-  Posledni zmena: {{updatedAt | date:"HH:mm:ss dd/MM/yyyy"}}</p>
+<p>Pocet = {{ count$ | async }}</p>
+
+@if(updatedAt$ | async){
+<p>Posledni zmena: {{ updatedAt$ | async | date:"HH:mm:ss dd/MM/yyyy" }}</p>
 }
