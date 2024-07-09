@@ -3,7 +3,7 @@ import {
   ActionReducerMap,
   MetaReducer
 } from '@ngrx/store';
-import { counterReducer, CounterState, COUNTER_KEY } from './counter';
+import { counterReducer, CounterState, COUNTER_KEY } from './reducers/counter';
 
 export interface State {
   [COUNTER_KEY]: CounterState;

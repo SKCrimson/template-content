@@ -17,8 +17,7 @@ export class CounterComponent {
   cannotDecrease$ = this.count$.pipe(map((count: number) => count <= 0));
   updatedAt$ = this.store.select(updatedAtSelector);
 
-  constructor(private store: Store) {
-  }
+  constructor(private store: Store) { }
 
   increase(): void {
     this.store.dispatch(increase());
