@@ -10,6 +10,7 @@ import { AppEffects } from './app.effects';
 import { metaReducers, reducers } from './app.ngrx';
 
 import './rxjs-lessons/rxjs-simple';
+import './rxjs-lessons/rxjs-subjects'
 
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes), 
