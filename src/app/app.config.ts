@@ -9,6 +9,8 @@ import { provideEffects } from '@ngrx/effects';
 import { AppEffects } from './app.effects';
 import { metaReducers, reducers } from './app.ngrx';
 
+import './rxjs-lessons/rxjs-simple';
+
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes), 
     provideClientHydration(), 

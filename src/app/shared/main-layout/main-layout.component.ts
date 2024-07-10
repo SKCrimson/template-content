@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
+//import '../../rxjs-lessons/rxjs-simple';
+
 @Component({
   selector: 'app-main-layout',
   standalone: true,
